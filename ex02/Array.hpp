@@ -6,7 +6,7 @@
 /*   By: akyoshid <akyoshid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 16:18:46 by akyoshid          #+#    #+#             */
-/*   Updated: 2025/09/05 17:13:31 by akyoshid         ###   ########.fr       */
+/*   Updated: 2025/09/05 18:14:35 by akyoshid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ class Array {
     Array(const Array& src);
     Array& operator=(const Array& src);
     ~Array();
-    T& operator[](int index);
-    const T& operator[](int index) const;
+    T& operator[](unsigned int index);
+    const T& operator[](unsigned int index) const;
     unsigned int size() const;
  private:
-    T *array;
-    unsigned int len;
+    T *array_;
+    unsigned int len_;
 };
 
 # include "Array.tpp"
