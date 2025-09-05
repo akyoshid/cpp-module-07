@@ -6,12 +6,25 @@
 /*   By: akyoshid <akyoshid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 21:40:55 by akyoshid          #+#    #+#             */
-/*   Updated: 2025/09/04 21:43:43 by akyoshid         ###   ########.fr       */
+/*   Updated: 2025/09/05 12:57:51 by akyoshid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include "whatever.hpp"
 
-int main() {
+int main(void) {
+    int a = 2;
+    int b = 3;
+    ::swap(a, b);
+    std::cout << "a = " << a << ", b = " << b << std::endl;
+    std::cout << "min(a, b) = " << ::min(a, b) << std::endl;
+    std::cout << "max(a, b) = " << ::max(a, b) << std::endl;
+    std::string c = "chaine1";
+    std::string d = "chaine2";
+    ::swap(c, d);
+    std::cout << "c = " << c << ", d = " << d << std::endl;
+    std::cout << "min(c, d) = " << ::min(c, d) << std::endl;
+    std::cout << "max(c, d) = " << ::max(c, d) << std::endl;
     return 0;
 }
